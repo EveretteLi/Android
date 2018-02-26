@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Laundry Time</string>
+    <string name="wash">WASH</string>
+    <string name="dry">DRY</string>
+    <string name="show_time">00:00</string>
+    <string name="reset">RESET</string>
+    <string name="pause">PAUSE</string>
+    <string name="time_on">TIME IS UP</string>
+    <string name="ok">OK</string>
+</resources>

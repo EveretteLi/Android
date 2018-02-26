@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Coffee Order</string>
+    <string name="over3">Sorry, you can only order three in one time</string>
+</resources>

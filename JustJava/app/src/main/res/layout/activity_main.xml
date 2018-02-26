@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.justjava.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <EditText
+        android:id="@+id/name_reader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Name: "
+        android:textSize="32sp"
+        android:inputType="textPersonName"
+        android:imeOptions="actionDone"
+        android:layout_margin="32dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TOPPING"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:background="@color/background"
+        android:paddingBottom="8dp"
+        android:id="@+id/textView" />
+
+    <CheckBox
+        android:id="@+id/cream_topping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        android:text="      $0.5      Whipped Cream"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:background="@color/options"/>
+    <CheckBox
+        android:id="@+id/choco_topping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked"
+        android:text="      $0.6      Chocolate"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:background="@color/options" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="QUANTITY"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/background"
+        android:textColor="@color/colorAccent"/>
+
+    <LinearLayout
+        android:background="@color/background"
+        android:padding="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_minus"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="sendMessage"
+            android:text="-"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:background="@color/background" />
+
+        <TextView
+            android:id="@+id/quantity_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="32sp" />
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="sendMessage"
+            android:text="+"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:background="@color/background"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="ODER SUMMARY"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@color/background"
+        android:textColor="@color/colorAccent"/>
+    <TextView
+        android:id="@+id/summary_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="$0"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/background"
+        android:textSize="32sp"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="finish"
+        android:text="ORDER"
+        android:textSize="20sp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
